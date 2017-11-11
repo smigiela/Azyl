@@ -3058,6 +3058,11 @@
   clip: auto;
 }
 
+/*// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);*/
+
 /*! bulma.io v0.6.1 | MIT License | github.com/jgthms/bulma */
 
 @-webkit-keyframes spinAround {
@@ -16855,6 +16860,22 @@ label.panel-block:hover {
   background: rgba(255, 56, 96, 0.05);
 }
 
+/* ===============================
+====== Text Overrides =========
+==================================*/
+
+.is-muted {
+  color: #b5b5b5 !important;
+}
+
+a.is-muted:hover {
+  color: #7a7a7a !important;
+}
+
+/* ===============================
+====== Dropdown Override =========
+==================================*/
+
 .dropdown {
   position: relative;
 }
@@ -17378,5 +17399,9 @@ label.panel-block:hover {
 
 .is-fullwidth {
   width: 100%;
+}
+
+html {
+  background-color: whitesmoke;
 }
 

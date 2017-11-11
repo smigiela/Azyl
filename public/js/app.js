@@ -985,11 +985,12 @@ window.Vue = __webpack_require__(35);
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
 
 // Vue.component('example', require('./components/Example.vue'));
-// var app = new Vue{{
-// 	el: '#app',
-// 	data: {}
-// }};
 
+var app = new Vue({
+	el: '#app'
+});
+
+// rozwijanie menu po zalogowaniu
 $(document).ready(function () {
 	$('div.dropdown').hover(function (e) {
 		$(this).toggleClass('is-open');

@@ -10,11 +10,13 @@ Vue.use(Buefy);
 
 
 // Vue.component('example', require('./components/Example.vue'));
-// var app = new Vue{{
-// 	el: '#app',
-// 	data: {}
-// }};
 
+const app = new Vue({
+	el: '#app'
+});
+
+
+// rozwijanie menu po zalogowaniu
 $(document).ready(function(){
 	$('div.dropdown').hover(function(e){
 		$(this).toggleClass('is-open');

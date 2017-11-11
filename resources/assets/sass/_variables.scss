@@ -1,6 +1,6 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg: whitesmoke;
 
 // Borders
 $laravel-border-color: darken($body-bg, 10%);
@@ -29,10 +29,10 @@ $navbar-default-bg: #fff;
 // Buttons
 $btn-default-color: $text-color;
 
-// Inputs
+/*// Inputs
 $input-border: lighten($text-color, 40%);
 $input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
+$input-color-placeholder: lighten($text-color, 30%);*/
 
 // Panels
 $panel-default-heading-bg: #fff;

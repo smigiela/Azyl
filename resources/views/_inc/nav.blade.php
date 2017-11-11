@@ -10,7 +10,7 @@
         </div>
 
         <div class="navbar-end" style="overflow: visible;">
-            @if (!Auth::guest())
+            @if (Auth::guest())
                 <a href="#" class="navbar-item is-tab">Login</a>    
                 <a href="#" class="navbar-item is-tab">Rejestracja</a>    
             @else

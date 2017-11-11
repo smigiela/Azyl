@@ -10,7 +10,8 @@
 @import "variables";
 
 // Bulma
-@import "node_modules/bulma/bulma";
+@import "./node_modules/bulma/bulma.sass";
+
 
 // Bulma Vue Modules
 @import "node_modules/buefy/src/scss/buefy";

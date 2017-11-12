@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Schronisko | Zarządzanie uprawnieniami</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -16,7 +16,9 @@
 </head>
 <body>
 
-    @include('_inc.nav.main') 
+    @include('_inc.nav.main')
+
+    @include('_inc.nav.manage') 
 
     <div id="app">
         @yield('content')

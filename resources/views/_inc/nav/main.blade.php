@@ -1,7 +1,7 @@
     <nav class="navbar has-shadow">
     <div class="container">
         <div class="navbar-start">
-            <a class="navbar-item" href="#">
+            <a class="navbar-item" href="{{url('/')}}">
                 <img src="{{asset('images/logo.png')}}" style="height: 40px; width: 200px;" alt="Schronisko" />
             </a>
             <a href="#" class="navbar-item is-tab is-hiden-mobile m-l-10">O nas</a>
@@ -19,9 +19,10 @@
                     <ul class="dropdown-menu ">
                         <li><a class="navbar-item" href="#"><span class="icon"><i class="fa fa-fw fa-user-circle"></i></span>Profil</a></li>
                         <li><a class="navbar-item" href="#"><span class="icon"><i class="fa fa-fw fa-bell"></i></span>Powiadomienia</a></li>
-                        <li><a class="navbar-item" href="#"><span class="icon"><i class="fa fa-fw fa-cog"></i></span>Ustawienia</a></li>
+                        <li><a class="navbar-item" href="{{route('manage.dashboard')}}"><span class="icon"><i class="fa fa-fw fa-cog"></i></span>Zarządzanie</a></li>
                         <li class="separator"></li>
-                        <li><a class="navbar-item" href="#"><span class="icon"><i class="fa fa-fw fa-sign-out"></i></span>Wyloguj</a></li>
+                        <li><a class="navbar-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"> <span class="icon"><i class="fa fa-fw fa-sign-out"></i></span>Wyloguj</a> </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">{{ csrf_field() }}</form></li>
                     </ul>
                 </div>               
             @endif

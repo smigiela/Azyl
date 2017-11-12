@@ -1,7 +1,63 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+
+@if (session('status'))
+    <div class="notification is-success">
+        {{session('status')}}
+    </div>
+
+<div class="columns">
+    <div class="column is-one-third is-offset-one-third m-t-100">
+        <div class="card">
+            <div class="card-content">
+                <h1 class="title">Zresetuj hasło</h1>
+
+
+                <form action="{{route('register')}}" method="POST" role="form">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="token" value="{{$token}}">
+                <div class="field">                   
+                    <label for="email" class="label">Adres email</label>
+                    <p class="control">
+                        <input class="input {{$errors->has('email') ? 'is-danger' : ''}}" type="text" name="email" id="email" value="{{old('email')}}">
+                    </p>
+                    @if ($errors->has('email'))
+                        <p class="help is-danger">{{$errors->first('email')}}</p>
+                    @endif
+                    
+                </div>
+
+                <div class="field">
+                    <label for="password" class="label">Hasło</label>
+                    <p class="control">
+                        <input class="input  {{$errors->has('password') ? 'is-danger' : ''}}" type="password" name="password" id="password">
+                    </p>
+                    @if ($errors->has('password'))
+                        <p class="help is-danger">{{$errors->first('password')}}</p>
+                    @endif
+                </div>
+
+                <div class="field">
+                    <label for="password" class="label">Powtórz hasło</label>
+                    <p class="control">
+                        <input class="input  {{$errors->has('password_confirmation') ? 'is-danger' : ''}}" type="password" name="password" id="password">
+                    </p>
+                    @if ($errors->has('password'))
+                        <p class="help is-danger">{{$errors->first('password')}}</p>
+                    @endif
+                </div>
+
+                <button class="button is-primary is-outlined is-fullwidth m-t-30">Zarejestruj</button>
+                </form>
+            </div> <!-- end of card-content -->
+          </div><!-- end of action form -->
+          <h5 class="has-text-centered m-t-15"><a href="{{ route('login') }}" class="is-muted">Posiadasz konto? Zaloguj się</a></h5>
+    </div>
+</div>
+
+
+{{-- <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
@@ -66,5 +122,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 @endsection

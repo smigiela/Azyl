@@ -12,12 +12,28 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
 </head>
 <body>
+<!-- navigation - view on all pages -->
+    @include('_inc.nav.main')
 
-    @include('_inc.nav.main') 
+<!-- slider - only on main page -->
+    @if(Request::is('/'))
+      @include('_inc.home.slider')
+    @endif
 
+<!-- about - only on main page -->
+    @if(Request::is('/'))
+      @include('_inc.home.about')
+    @endif
+
+<!-- adoption - only on main page -->
+    @if(Request::is('/'))
+      @include('_inc.home.adoption')
+    @endif
+
+<!-- dynamic content -->
     <div id="app">
         @yield('content')
     </div>

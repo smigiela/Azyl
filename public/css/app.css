@@ -16873,6 +16873,17 @@ a.is-muted:hover {
 }
 
 /* ===============================
+====== Buttons Overrides =========
+==================================*/
+
+.hero .button {
+  /* przycisk na sliderze */
+  color: darkgray;
+  background-color: black;
+  border-color: darkgray;
+}
+
+/* ===============================
 ====== Dropdown Override =========
 ==================================*/
 
@@ -17407,6 +17418,22 @@ html {
 
 .navbar {
   z-index: 999;
+}
+
+#slider {
+  padding: 100px 0;
+  background: url("/images/slider.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero hr {
+  border: 1px darkgray solid;
+}
+
+#adoption {
+  background-color: white;
 }
 
 .side-menu {

@@ -26,6 +26,7 @@
             <img src="/images/zwierz6.jpg" alt="">
         </div>
       </div>
+      <button class="button is-primary" href="#">Zobacz wszystkie...</button>
     </div>
   </div>
 </div>

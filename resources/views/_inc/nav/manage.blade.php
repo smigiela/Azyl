@@ -11,17 +11,17 @@
 			Administracja
 		</p>
 		<ul class="menu-list">
-			<li><a href="">Użytkownicy</a></li>	
-			<li><a href="">Role i uprawnienia</a></li>	
+			<li><a href="{{route('users.index')}}">Użytkownicy</a></li>	
+			<li><a href="">Role i uprawnienia</a></li>
 		</ul>
 
 		<p class="menu-label">
 			Zwierzaki
 		</p>
 		<ul class="menu-list">
-			<li><a href="">Pokaż wszystkie</a></li>	
-			<li><a href="">Dodaj</a></li>	
-			<li><a href="">Kategorie</a></li>	
+			<li><a href="">Pokaż wszystkie</a></li>
+			<li><a href="">Dodaj</a></li>
+			<li><a href="">Kategorie</a></li>
 		</ul>
 	</aside>
 </div>

@@ -38,6 +38,12 @@
         @yield('content')
     </div>
 
+<!-- dynamic content -->
+    <div id="app">
+        @include('_inc.home.footer')
+    </div>
+
+
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>

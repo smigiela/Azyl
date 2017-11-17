@@ -16884,6 +16884,14 @@ a.is-muted:hover {
 }
 
 /* ===============================
+  ====== Footer Overrides =========
+  ==================================*/
+
+.footer {
+  padding: 10px 10px;
+}
+
+/* ===============================
 ====== Dropdown Override =========
 ==================================*/
 
@@ -17422,7 +17430,7 @@ html {
 
 #slider {
   padding: 100px 0;
-  background: url("/images/slider.jpg");
+  background: url("/images/slider1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -17436,8 +17444,31 @@ html {
   background-color: white;
 }
 
+#adoption img {
+  width: 392px;
+  height: 230px;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+#adoption img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#adoption .container button {
+  width: 100%;
+}
+
+.facebookbutton {
+  background-color: #3B5998;
+  color: white;
+}
+
 .side-menu {
-  position: fixed;
+  position: absolute;
   height: 100vh;
   width: 200px;
   background-color: white;
@@ -17445,5 +17476,20 @@ html {
 
 .side-menu a:hover {
   color: #00d1b2;
+}
+
+.managment-area {
+  position: absolute;
+  top: 4rem;
+  left: 200px;
+  right: 0;
+}
+
+.flex-container {
+  margin: 10px 25px;
+}
+
+table {
+  width: 100%;
 }
 

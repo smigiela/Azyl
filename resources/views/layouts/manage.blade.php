@@ -12,15 +12,15 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    
+
 </head>
 <body>
 
     @include('_inc.nav.main')
 
-    @include('_inc.nav.manage') 
+    @include('_inc.nav.manage')
 
-    <div id="app">
+    <div class="managment-area" id="app">
         @yield('content')
     </div>
 

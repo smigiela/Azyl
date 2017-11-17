@@ -7,9 +7,9 @@ html{
 }
 
 #slider{
-	
+
 	padding: 100px 0;
-	background: url('/images/slider.jpg');
+	background: url('/images/slider1.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,4 +20,22 @@ html{
 
 #adoption{
 	background-color: white;
+}
+
+#adoption img{
+	width: 392px;
+	height: 230px;
+	transition: transform .5s;
+}
+#adoption img:hover{
+	transform: scale(1.1);
+}
+
+#adoption .container button{
+	width: 100%;
+}
+
+.facebookbutton{
+	background-color: #3B5998;
+	color: white;
 }
